@@ -1,6 +1,6 @@
 {
   "name": "react-native-accordion-collapsible",
-  "version": "0.1.0",
+  "version": "0.0.5",
   "description": "Accordion Collapsible component for React Native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -37,7 +37,9 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "accordion",
+    "collapsible"
   ],
   "repository": {
     "type": "git",
