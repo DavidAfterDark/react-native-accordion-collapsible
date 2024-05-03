@@ -30,12 +30,25 @@ import Accordion from 'react-native-accordion-collapsible';
 
 // ...
 
-<Accordion headerText='Lorem ipsum'>
+<Accordion headerText='Lorem ipsum' style={styles.accordion} styleContent={accordionContent}>
   <Text>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     Nam eu massa viverra, malesuada metus sed, malesuada dui.
   </Text>
 </Accordion>
+
+
+
+const styles = StyleSheet.create({
+  accordion: {
+    marginTop: 150,
+    marginHorizontal: 20
+  },
+  accordionContent: {
+    paddingTop: 10
+  }
+})
+
 ```
 
 ## API
