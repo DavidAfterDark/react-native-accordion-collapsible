@@ -13,6 +13,7 @@ interface AccordionProps {
   styleHeader?: ViewProps['style']
   styleHeaderIconContainer?: ViewProps['style']
   styleHeaderText?: TextProps['style']
+  open?: boolean
 }
 
 export default function Accordion(props: AccordionProps): ReactElement {
@@ -61,7 +62,11 @@ export default function Accordion(props: AccordionProps): ReactElement {
 
   return (
     <View style={[styles.container, props.style]}>
-      <Pressable style={[styles.header, props.styleHeader]} onPress={onPressHeader}>
+      <Pressable style={[styles.header, props.styleHeader]} onPress={onPressHeader} onLayout={() => {
+        if (props.open) {
+          onPressHeader()
+        }
+      }}>
         <Text style={[styles.headerText, props.styleHeaderText]}>
           {props.headerText}
         </Text>
