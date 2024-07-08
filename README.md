@@ -53,16 +53,17 @@ const styles = StyleSheet.create({
 
 ## API
 
-| Prop                     | Type                   | Required |  Description      | 
-| ------------------------ | ---------------------- | -------- | ----------------- |    
-| children                 | ReactNativeElement     | Yes      | Accordion content |
-| headerText               | string                 | Yes      | Accordion Title   |
-| iconRight                | ReactNativeElement     | No       | chevron icon
-| style                    | Styles                 | No       | Accordion styles
-| styleContent             | Styles                 | No       | styles for the content container 
-| styleHeader              | Styles                 | No       | header container styles 
-| styleHeaderIconContainer | Styles                 | No       | styles for iconRight container 
-| styleHeaderText          | Styles                 | No       | Styles for header text 
+| Prop                     | Type                   | Required |  Description                       | 
+| ------------------------ | ---------------------- | -------- | ---------------------------------- |    
+| children                 | ReactNativeElement     | Yes      | Accordion content                  |
+| headerText               | string                 | Yes      | Accordion Title                    |
+| iconRight                | ReactNativeElement     | No       | chevron icon                       |
+| style                    | Styles                 | No       | Accordion styles                   |
+| styleContent             | Styles                 | No       | styles for the content container   |
+| styleHeader              | Styles                 | No       | header container styles            |
+| styleHeaderIconContainer | Styles                 | No       | styles for iconRight container     |
+| styleHeaderText          | Styles                 | No       | Styles for header text             |
+| open                     | Boolean                | No       | set if open                        |
 
 
 ## Contributing
