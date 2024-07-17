@@ -14,6 +14,7 @@ interface AccordionProps {
   styleHeaderIconContainer?: ViewProps['style']
   styleHeaderText?: TextProps['style']
   open?: boolean
+  delayTimeToOpen?: number
 }
 
 export default function Accordion(props: AccordionProps): ReactElement {
@@ -64,7 +65,9 @@ export default function Accordion(props: AccordionProps): ReactElement {
     <View style={[styles.container, props.style]}>
       <Pressable style={[styles.header, props.styleHeader]} onPress={onPressHeader} onLayout={() => {
         if (props.open) {
-          onPressHeader()
+          setTimeout(() => {
+            onPressHeader()
+          }, props.delayTimeToOpen ?? 0)
         }
       }}>
         <Text style={[styles.headerText, props.styleHeaderText]}>
